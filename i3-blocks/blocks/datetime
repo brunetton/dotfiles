@@ -1,0 +1,13 @@
+#!/bin/bash
+
+FORMAT="${BLOCK_INSTANCE:-%H:%M %a %d %b}"
+DATETIME=$(date "+${FORMAT}")
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  gsimplecal
+fi
+
+echo "${DATETIME}"
+echo "${DATETIME}"
+echo ""
