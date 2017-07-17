@@ -1,6 +1,7 @@
 # Personal conf files
 
   * i3-blocks -> ~/.i3-blocks/
+  * fish -> ~/.config/fish/
 
 ## See also
 
