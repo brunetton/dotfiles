@@ -1,0 +1,8 @@
+termcapinfo xterm* ti@:te@      # ScrollWheel
+caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
+# ScrollWheel
+termcapinfo xterm* ti@:te@    
+# Key bindings
+bindkey ^[[1;3D prev            # Alt + left
+bindkey ^[[1;3C next            # Alt + right
+
