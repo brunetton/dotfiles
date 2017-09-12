@@ -3,11 +3,11 @@
 #	email = xxx  => to be defined manually for each project (using includeIf)
     useConfigOnly = true  # do not auto-generate user@machine emails
 
-[includeIf "gitdir:~/dev/dbnomics/"]
-    path = ~/dev/dbnomics/gitconfig
-
 [includeIf "gitdir:~/dev/"]
     path = ~/dev/gitconfig
+
+[includeIf "gitdir:~/dev/dbnomics/"]
+    path = ~/dev/dbnomics/gitconfig
 
 [alias]
     ci = commit
