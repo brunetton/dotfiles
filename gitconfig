@@ -1,0 +1,42 @@
+[user]
+	name = Bruno Duyé
+#	email = xxx  => to be defined manually for each project (using includeIf)
+    useConfigOnly = true  # do not auto-generate user@machine emails
+
+[includeIf "gitdir:~/dev/dbnomics/"]
+    path = ~/dev/dbnomics/gitconfig
+
+[includeIf "gitdir:~/dev/"]
+    path = ~/dev/gitconfig
+
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    sed = !sh -c 'git grep --null --full-name --name-only -e \"$1\" | xargs -0 perl -i -p -e \"s/$1/$2/g\"' -
+
+[color]
+    ui = auto
+
+[diff]
+    tool = meld
+    renames = 0
+    noprefix = true
+
+[push]
+    default = current
+
+[merge]
+    #conflictstyle = diff3
+    tool = meld
+
+# reuse recorded resolution
+# http://git-scm.com/blog/2010/03/08/rerere.html
+[rerere]
+    enabled = 1
+
+[grep]
+    lineNumber = 1
+
+[core]
+    excludesfile = ~/.gitignore
