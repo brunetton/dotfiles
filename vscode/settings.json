@@ -1,0 +1,24 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
+{
+    "editor.fontSize": 11,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        ".vscode": true,
+        ".ipynb*": true,
+        "**/*.{pyc,pyo}": { "when": "$(basename).py" }
+    },
+    "terminal.integrated.fontSize": 11,
+    "python.linting.pylintCategorySeverity.convention": "Hint",
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=150"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=invalid-name,global-statement,line-too-long"
+    ],
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false
+}

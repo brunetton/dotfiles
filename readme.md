@@ -1,9 +1,9 @@
 # Personal conf files
 
-  * i3-blocks -> ~/.i3-blocks/
-  * fish -> ~/.config/fish/
+  * i3-blocks/ -> ~/.i3-blocks/
+  * fish/ -> ~/.config/fish/
+  * vscode/ -> ~/.config/Code/User/
   * screenrc -> ~/.screenrc
-  * vscode/keybindings.json -> ~/.config/Code/User/keybindings.json
   * gitconfig -> ~/.gitconfig
 
 ## See also
