@@ -20,5 +20,7 @@
         "--disable=invalid-name,global-statement,line-too-long"
     ],
     "window.menuBarVisibility": "toggle",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "git.countBadge": "tracked",
+    "workbench.activityBar.visible": true
 }
