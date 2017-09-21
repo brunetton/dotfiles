@@ -12,7 +12,6 @@
     "python.linting.pylintCategorySeverity.convention": "Hint",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
-    "diffEditor.ignoreTrimWhitespace": false,
     "python.formatting.autopep8Args": [
         "--max-line-length=150"
     ],
@@ -22,5 +21,6 @@
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
     "git.countBadge": "tracked",
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "gitlens.codeLens.enabled": false
 }
