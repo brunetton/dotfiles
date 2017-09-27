@@ -50,5 +50,10 @@
         "key": "ctrl+shift+[Period]",
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "git.openChange",
+        "when": "editorTextFocus"
     }
 ]
