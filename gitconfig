@@ -30,6 +30,10 @@
     #conflictstyle = diff3
     tool = meld
 
+[fetch]
+    prune = true
+
+
 # reuse recorded resolution
 # http://git-scm.com/blog/2010/03/08/rerere.html
 [rerere]

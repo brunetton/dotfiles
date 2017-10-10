@@ -1,6 +1,6 @@
 // Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
 {
-    "editor.fontSize": 11,
+    "editor.fontSize": 13,
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
@@ -10,7 +10,7 @@
     },
     "terminal.integrated.fontSize": 11,
     "python.linting.pylintCategorySeverity.convention": "Hint",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "workbench.startupEditor": "newUntitledFile",
     "python.formatting.autopep8Args": [
         "--max-line-length=150"
@@ -22,5 +22,6 @@
     "editor.minimap.enabled": false,
     "git.countBadge": "tracked",
     "workbench.activityBar.visible": true,
-    "gitlens.codeLens.enabled": false
+    "gitlens.codeLens.enabled": false,
+    "files.trimTrailingWhitespace": true,
 }
