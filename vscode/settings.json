@@ -24,4 +24,8 @@
     "workbench.activityBar.visible": true,
     "gitlens.codeLens.enabled": false,
     "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "files.associations": {
+        "*.nemo_action": "ini",
+    },
 }
