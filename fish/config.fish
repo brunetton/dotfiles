@@ -1,7 +1,7 @@
 # Workaround to disable copy on delete (https://github.com/fish-shell/fish-shell/issues/772)
 set FISH_CLIPBOARD_CMD "cat"
 
-set PATH $PATH ~/bin/ ~/bin/bin/
+set PATH $PATH ~/bin/ ~/bin/bin/ ~/bin/dotfiles_scripts
 
 alias s="cd .."
 alias nemo="nemo ."
