@@ -28,4 +28,8 @@
     "files.associations": {
         "*.nemo_action": "ini",
     },
+    "cSpell.userWords": [
+        "dataset"
+    ],
+    "debug.allowBreakpointsEverywhere": true,
 }
