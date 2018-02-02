@@ -6,6 +6,7 @@
   * screenrc -> ~/.screenrc
   * gitconfig -> ~/.gitconfig
   * python/ipython_config.py -> ~/.ipython/profile_default/ipython_config.py
+  * tmux/tmux.conf -> ~/.tmux.conf
 
 ## See also
 
