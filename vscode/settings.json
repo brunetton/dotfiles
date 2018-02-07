@@ -30,7 +30,7 @@
     },
     "elm.formatOnSave": true,
     "cSpell.userWords": [
-        "dataset"
+        "dataset",
         "dbnomics",
         "etree",
         "iterfind",
