@@ -28,8 +28,12 @@
     "files.associations": {
         "*.nemo_action": "ini",
     },
+    "elm.formatOnSave": true,
     "cSpell.userWords": [
         "dataset"
+        "dbnomics",
+        "etree",
+        "iterfind",
+        "toolz"
     ],
-    "debug.allowBreakpointsEverywhere": true,
 }
