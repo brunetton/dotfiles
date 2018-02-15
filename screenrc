@@ -1,3 +1,5 @@
+# ~/.screenrc
+
 startup_message off
 termcapinfo xterm* ti@:te@      # ScrollWheel
 caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
