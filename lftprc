@@ -1,0 +1,8 @@
+set ssl:verify-certificat no
+set ftp:ssl-protect-data yes
+set net:connection-limit 1
+set net:max-retries 0
+alias s cd ..
+# Avoid "ls: Ne peut attribuer l'adresse demandée"
+set dns:order "inet inet6"
+
