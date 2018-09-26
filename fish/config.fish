@@ -8,3 +8,16 @@ alias nemo="nemo ."
 alias atom="atom ."
 alias gitg="gitg --all "
 alias gg="git log --oneline --abbrev-commit --all --graph --decorate --color"
+alias c="code ."
+
+function z
+    cd (/home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py)
+end
+
+function zs
+    cd (/home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -s)
+end
+
+function zj
+    cd (/home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -j)
+end
