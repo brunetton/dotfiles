@@ -1,7 +1,8 @@
 [user]
-	name = Bruno Duyé
+	name = Bruno
 #	email = xxx  => to be defined manually for each project (using includeIf)
     useConfigOnly = true  # do not auto-generate user@machine emails
+	email = bruno@bruno.com
 
 [includeIf "gitdir:~/dev/"]
     path = ~/dev/gitconfig
