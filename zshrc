@@ -104,7 +104,7 @@ alias s="cd .."
 
 alias zs='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -s `'
 alias zj='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
-alias zf='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py`'
+alias z='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py`'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
