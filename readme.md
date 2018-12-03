@@ -8,6 +8,7 @@
   * python/ipython_config.py -> ~/.ipython/profile_default/ipython_config.py
   * tmux/tmux.conf -> ~/.tmux.conf
   * lftprc => ~/.lftprc
+  * zshrc => ~/.zshrc
 
 ## See also
 
