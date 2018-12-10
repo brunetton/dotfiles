@@ -16,7 +16,8 @@
         "--max-line-length=120"
     ],
     "python.linting.pylintArgs": [
-        "--rcfile", "~/dev/dbnomics/code-style"
+        "--rcfile",
+        "~/dev/dbnomics/code-style/pylintrc"
     ],
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
