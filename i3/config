@@ -174,9 +174,7 @@ bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
 bindsym $mod+Shift+e exec nemo --no-desktop
-bindsym $mod+Shift+t exec xfce4-terminal
-bindsym $mod+Shift+g exec gnome-terminal
-
+bindsym $mod+Shift+t exec gnome-terminal
 bindsym $mod+Shift+h exec /home/bruno/bin/hibernate_confirm
 bindsym $mod+Shift+s exec /home/bruno/bin/suspend_confirm
 
