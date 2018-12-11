@@ -105,7 +105,11 @@ alias s="cd .."
 alias zs='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -s `'
 alias zj='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
 alias z='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py`'
+alias gig='gitg --all &!'
 
+export PATH=$PATH:~/bin/
+
+# Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
