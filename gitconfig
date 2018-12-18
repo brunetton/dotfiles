@@ -45,7 +45,8 @@
 
 [core]
     excludesfile = ~/.gitignore
-[gui]
+    # no output to less by default
+    pager = cat
 [gui]
 	fontdiff = -family \"DejaVu Sans Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 	fontui = -family \"DejaVu Sans\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
