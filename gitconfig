@@ -30,6 +30,8 @@
 [merge]
     #conflictstyle = diff3
     tool = meld
+    # I like to keep branches by default, and use '--no-ff" when I want to fast forward
+	ff = false
 
 [fetch]
     prune = true
