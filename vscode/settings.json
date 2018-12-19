@@ -21,7 +21,7 @@
     ],
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
-    "editor.codeLens": false
+    "editor.codeLens": false,
     "git.countBadge": "tracked",
     "workbench.activityBar.visible": true,
     "gitlens.codeLens.enabled": false,
