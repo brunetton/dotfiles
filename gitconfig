@@ -1,8 +1,8 @@
 [user]
-	name = Bruno
+    name = Bruno
 #	email = xxx  => to be defined manually for each project (using includeIf)
     useConfigOnly = true  # do not auto-generate user@machine emails
-	email = bruno@bruno.com
+    email = bruno@bruno.com
 
 [includeIf "gitdir:~/dev/"]
     path = ~/dev/gitconfig
@@ -31,7 +31,7 @@
     #conflictstyle = diff3
     tool = meld
     # I like to keep branches by default, and use '--no-ff" when I want to fast forward
-	ff = false
+    ff = false
 
 [fetch]
     prune = true
@@ -49,7 +49,7 @@
     excludesfile = ~/.gitignore
     # no output to less by default
     pager = cat
-	editor = vi
+    editor = vi
 [gui]
-	fontdiff = -family \"DejaVu Sans Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-	fontui = -family \"DejaVu Sans\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+    fontdiff = -family \"DejaVu Sans Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+    fontui = -family \"DejaVu Sans\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
