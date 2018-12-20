@@ -25,6 +25,7 @@
     noprefix = true
 
 [push]
+    # push to remote branch that have the same name as current one (don't need to do git branch --set-upstream-to=origin/foo)
     default = current
 
 [merge]
