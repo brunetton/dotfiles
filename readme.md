@@ -9,6 +9,7 @@
   * tmux/tmux.conf -> ~/.tmux.conf
   * lftprc => ~/.lftprc
   * zshrc => ~/.zshrc
+  * sxhkdrc => ~/.config/sxhkd/sxhkdrc
 
 ## See also
 
