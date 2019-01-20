@@ -104,9 +104,9 @@ alias ll="ls -l"
 alias c="code ."
 alias s="cd .."
 
-alias zs='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -s `'
-alias zj='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
-alias z='cd ` /home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py`'
+alias zs='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py -s `'
+alias zj='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
+alias z='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py`'
 alias gig='gitg --all &!'
 alias ggui='git gui &!'
 
