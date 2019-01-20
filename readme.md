@@ -10,6 +10,7 @@
   * lftprc => ~/.lftprc
   * zshrc => ~/.zshrc
   * sxhkdrc => ~/.config/sxhkd/sxhkdrc
+  * nanorc => ~/.nanorc
 
 ## See also
 

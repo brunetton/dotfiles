@@ -1,0 +1,7 @@
+unset suspend
+set autoindent
+set mouse
+unset tempfile
+
+## Bourne shell scripts
+include "/usr/share/nano/sh.nanorc"
