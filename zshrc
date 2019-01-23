@@ -64,7 +64,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  autojump
+  autojump,  # https://github.com/wting/autojump
   # https://github.com/abhigenie92/zsh_to_fish
   zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
 )
