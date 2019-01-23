@@ -9,7 +9,6 @@
         "**/*.{pyc,pyo}": { "when": "$(basename).py" }
     },
     "terminal.integrated.fontSize": 11,
-    "python.linting.pylintCategorySeverity.convention": "Hint",
     "window.zoomLevel": -1,
     "workbench.startupEditor": "newUntitledFile",
     "python.formatting.autopep8Args": [
