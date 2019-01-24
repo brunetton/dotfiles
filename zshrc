@@ -65,15 +65,19 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   autojump,
+  virtualenvwrapper
   # https://github.com/abhigenie92/zsh_to_fish
   zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
 # apt install autojump
 source /usr/share/autojump/autojump.sh
 
-# User configuration
+source ~/bin/bin/zsh-autoenv/autoenv.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
