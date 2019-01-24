@@ -65,6 +65,7 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   autojump,
+  virtualenvwrapper
   # https://github.com/abhigenie92/zsh_to_fish
   zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
 )
