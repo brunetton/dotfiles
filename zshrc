@@ -71,10 +71,13 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
 # apt install autojump
 source /usr/share/autojump/autojump.sh
 
-# User configuration
+source ~/bin/bin/zsh-autoenv/autoenv.zsh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
