@@ -261,4 +261,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
-
+exec --no-startup-id xfsettingsd --replace
+exec --no-startup-id xrandr --dpi 80
+reload
