@@ -20,7 +20,7 @@
     ],
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
-    "editor.codeLens": false,
+    // "editor.codeLens": false,  // Si false: cache les outils résolution conflicts Git
     "git.countBadge": "tracked",
     "workbench.activityBar.visible": true,
     "gitlens.codeLens.enabled": false,
