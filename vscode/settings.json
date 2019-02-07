@@ -44,5 +44,8 @@
             120
         ]
     },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
     "workbench.startupEditor": "none"
 }
