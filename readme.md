@@ -1,6 +1,7 @@
 # Personal conf files
 
   * i3-blocks/ -> ~/.i3-blocks/
+  * i3/config -> ~/.config/i3/config
   * fish/ -> ~/.config/fish/
   * vscode/ -> ~/.config/Code/User/
   * screenrc -> ~/.screenrc

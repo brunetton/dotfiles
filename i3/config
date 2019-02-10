@@ -156,7 +156,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #status_command i3status
-        status_command i3blocks -c /home/bruno/dev/dotfiles/i3-blocks/i3blocks.conf
+        status_command i3blocks -c ~/.i3-blocks/i3blocks.conf
 }
 
 
@@ -200,40 +200,40 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -R
 
 ## i3-workspacesgrid config
 # Direct acces to desktops
-bindsym $mod+ampersand exec curl http://localhost:7080/jump/1
-bindsym $mod+eacute exec curl http://localhost:7080/jump/2
-bindsym $mod+quotedbl exec curl http://localhost:7080/jump/3
-bindsym $mod+apostrophe exec curl http://localhost:7080/jump/4
-bindsym $mod+parenleft exec curl http://localhost:7080/jump/5
-bindsym $mod+minus exec curl http://localhost:7080/jump/6
-bindsym $mod+egrave exec curl http://localhost:7080/jump/7
-bindsym $mod+underscore exec curl http://localhost:7080/jump/8
-bindsym $mod+ccedilla exec curl http://localhost:7080/jump/9
-bindsym $mod+agrave exec curl http://localhost:7080/jump/10
+bindsym $mod+ampersand exec curl http://localhost:8080/jump/1
+bindsym $mod+eacute exec curl http://localhost:8080/jump/2
+bindsym $mod+quotedbl exec curl http://localhost:8080/jump/3
+bindsym $mod+apostrophe exec curl http://localhost:8080/jump/4
+bindsym $mod+parenleft exec curl http://localhost:8080/jump/5
+bindsym $mod+minus exec curl http://localhost:8080/jump/6
+bindsym $mod+egrave exec curl http://localhost:8080/jump/7
+bindsym $mod+underscore exec curl http://localhost:8080/jump/8
+bindsym $mod+ccedilla exec curl http://localhost:8080/jump/9
+bindsym $mod+agrave exec curl http://localhost:8080/jump/10
 # Direct sending containers to workspaces
-bindsym $mod+Shift+ampersand exec curl http://localhost:7080/send/1
-bindsym $mod+Shift+eacute exec curl http://localhost:7080/send/2
-bindsym $mod+Shift+quotedbl exec curl http://localhost:7080/send/3
-bindsym $mod+Shift+apostrophe exec curl http://localhost:7080/send/4
-bindsym $mod+Shift+5 exec curl http://localhost:7080/send/5
-bindsym $mod+Shift+minus exec curl http://localhost:7080/send/6
-bindsym $mod+Shift+egrave exec curl http://localhost:7080/send/7
-bindsym $mod+Shift+underscore exec curl http://localhost:7080/send/8
-bindsym $mod+Shift+ccedilla exec curl http://localhost:7080/send/9
-bindsym $mod+Shift+agrave exec curl http://localhost:7080/send/10
+bindsym $mod+Shift+ampersand exec curl http://localhost:8080/send/1
+bindsym $mod+Shift+eacute exec curl http://localhost:8080/send/2
+bindsym $mod+Shift+quotedbl exec curl http://localhost:8080/send/3
+bindsym $mod+Shift+apostrophe exec curl http://localhost:8080/send/4
+bindsym $mod+Shift+5 exec curl http://localhost:8080/send/5
+bindsym $mod+Shift+minus exec curl http://localhost:8080/send/6
+bindsym $mod+Shift+egrave exec curl http://localhost:8080/send/7
+bindsym $mod+Shift+underscore exec curl http://localhost:8080/send/8
+bindsym $mod+Shift+ccedilla exec curl http://localhost:8080/send/9
+bindsym $mod+Shift+agrave exec curl http://localhost:8080/send/10
 # Moving througth workspaces
-bindsym $mod+Ctrl+Up exec curl http://localhost:7080/up
-bindsym $mod+Ctrl+Down exec curl http://localhost:7080/down
-bindsym $mod+Ctrl+Left exec curl http://localhost:7080/left
-bindsym $mod+Ctrl+Right exec curl http://localhost:7080/right
+bindsym $mod+Ctrl+Up exec curl http://localhost:8080/up
+bindsym $mod+Ctrl+Down exec curl http://localhost:8080/down
+bindsym $mod+Ctrl+Left exec curl http://localhost:8080/left
+bindsym $mod+Ctrl+Right exec curl http://localhost:8080/right
 # Sending containers to workspaces
-bindsym $mod+Ctrl+Shift+Up exec curl http://localhost:7080/send/up
-bindsym $mod+Ctrl+Shift+Down exec curl http://localhost:7080/send/down
-bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7080/send/left
-bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7080/send/right
+bindsym $mod+Ctrl+Shift+Up exec curl http://localhost:8080/send/up
+bindsym $mod+Ctrl+Shift+Down exec curl http://localhost:8080/send/down
+bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:8080/send/left
+bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:8080/send/right
 
 
-exec xterm -e "/home/bruno/dev/i3-workspacesgrid/i3-grid.py start-server"
+exec xterm -e "~/dev/i3-workspacesgrid/i3-grid.py start-server"
 
 
 for_window [title="MediaInfo"] floating enable
@@ -263,4 +263,4 @@ exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
 exec --no-startup-id xfsettingsd --replace
 exec --no-startup-id xrandr --dpi 80
-reload
+# reload
