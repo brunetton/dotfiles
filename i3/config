@@ -169,14 +169,14 @@ bar {
 workspace_layout tabbed
 
 bindsym $mod+Shift+c exec chromium
-bindsym $mod+Shift+f exec /home/bruno/bin/firefox-bin
+bindsym $mod+Shift+f exec ~/bin/firefox-bin
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
 bindsym $mod+Shift+e exec nemo --no-desktop
 bindsym $mod+Shift+t exec gnome-terminal
-bindsym $mod+Shift+h exec /home/bruno/bin/hibernate_confirm
-bindsym $mod+Shift+s exec /home/bruno/bin/suspend_confirm
+bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
+bindsym $mod+Shift+s exec ~/bin/suspend_confirm
 
 # Screenshot
 bindsym Print exec gnome-screenshot --interactive
