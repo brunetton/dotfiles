@@ -118,6 +118,9 @@ alias ggui='git gui &!'
 
 export PATH=$PATH:~/bin/
 
+# Do not merge histories
+unsetopt share_history
+
 # Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
