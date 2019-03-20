@@ -10,7 +10,6 @@
     },
     "terminal.integrated.fontSize": 11,
     "window.zoomLevel": -1,
-    "workbench.startupEditor": "newUntitledFile",
     "python.formatting.autopep8Args": [
         "--max-line-length=120"
     ],
@@ -23,7 +22,7 @@
     // "editor.codeLens": false,  // Si false: cache les outils résolution conflicts Git
     "git.countBadge": "tracked",
     "workbench.activityBar.visible": true,
-    "gitlens.codeLens.enabled": false,
+    // "gitlens.codeLens.enabled": false,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "files.associations": {
@@ -47,5 +46,10 @@
     "[javascript]": {
         "editor.formatOnSave": true
     },
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "arduino.path": "/home/bruno2/bin/bin/arduino-1.8.8",
+    "breadcrumbs.enabled": true,
+    "arduino.additionalUrls": [
+        "http://drazzy.com/package_drazzy.com_index.json"
+    ]
 }
