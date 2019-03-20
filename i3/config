@@ -41,8 +41,7 @@ bindsym $mod+Shift+w kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
-bindsym $mod+d exec --no-startup-id /home/bruno/bin/dmenu-run-desktop-binary
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop  --display-binary --dmenu="dmenu -l 30 -p Run"
 
 
 # change focus
