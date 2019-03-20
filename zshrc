@@ -106,7 +106,7 @@ source ~/bin/bin/zsh-autoenv/autoenv.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ll="ls -l"
+alias ll="ls -lh"
 alias c="code ."
 alias s="cd .."
 
