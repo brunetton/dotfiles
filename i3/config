@@ -240,7 +240,7 @@ for_window [title="MediaInfo"] floating enable
 #for_window [class="VirtualBox"] floating disable
 #for_window [class="VirtualBox" title="Windows.*"] floating enable
 #for_window [class="VirtualBox" title=".*Virtual Machine.*"] floating enable
-for_window [class="VirtualBox"] floating enable
+# for_window [class="VirtualBox"] floating enable
 for_window [class="(j|J)ack-keyboard"] floating enable
 for_window [title="^setBfree$"] floating enable
 for_window [title="^GMIDImonitor$"] floating enable
