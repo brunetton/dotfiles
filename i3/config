@@ -167,7 +167,7 @@ bar {
 # I love tabs
 workspace_layout tabbed
 
-bindsym $mod+Shift+c exec chromium
+bindsym $mod+Shift+c exec google-chrome
 bindsym $mod+Shift+f exec ~/bin/firefox-bin
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
@@ -260,6 +260,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
-exec --no-startup-id xfsettingsd --replace
+# exec --no-startup-id xfsettingsd --replace
 exec --no-startup-id xrandr --dpi 80
 # reload
