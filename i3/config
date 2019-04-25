@@ -175,7 +175,7 @@ bindsym $mod+Shift+m exec clementine
 bindsym $mod+Shift+e exec nemo --no-desktop
 bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
 bindsym $mod+Shift+s exec ~/bin/suspend_confirm
-bindsym $mod+Shift+t exec lxterminal
+bindsym $mod+Shift+t exec gnome-terminal
 
 # Screenshot
 bindsym Print exec gnome-screenshot --interactive
@@ -232,7 +232,7 @@ bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7080/send/left
 bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7080/send/right
 
 
-exec xterm -e "~/dev/i3-workspacesgrid/i3-grid.py start-server"
+exec --no-startup-id "~/dev/i3-workspacesgrid/i3-grid.py start-server"
 
 
 for_window [title="MediaInfo"] floating enable
@@ -261,5 +261,6 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
 # exec --no-startup-id xfsettingsd --replace
-exec --no-startup-id xrandr --dpi 80
+# exec --no-startup-id xrandr --dpi 80
 # reload
+
