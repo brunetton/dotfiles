@@ -1,2 +1,6 @@
-XF86Audio{Play,Stop,Prev,Next}
-    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Previous,Next}
+XF86Audio{Stop,Play}
+    xte 'key {Page_Up,Page_Down}'
+XF86Audio{Prev,Next}
+    xte 'key {Home,End}'
+control + XF86Audio{Stop,Play}
+    xte 'keydown Control_L' 'key {Page_Up,Page_Down}' 'keyup Control_L'
