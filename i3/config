@@ -232,7 +232,7 @@ bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:8080/send/left
 bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:8080/send/right
 
 
-exec xterm -e "~/dev/i3-workspacesgrid/i3-grid.py start-server"
+exec ~/dev/i3-workspacesgrid/i3-grid.py start-server
 
 
 for_window [title="MediaInfo"] floating enable
