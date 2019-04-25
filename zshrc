@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/bruno2/.oh-my-zsh"
+export ZSH="/usr/share/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -64,7 +64,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  autojump,
+  #autojump,
   virtualenvwrapper
   # https://github.com/abhigenie92/zsh_to_fish
   zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
@@ -75,9 +75,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # apt install autojump
-source /usr/share/autojump/autojump.sh
+source /usr/share/autojump/autojump.zsh
 
 source ~/bin/bin/zsh-autoenv/autoenv.zsh
+
+# Make new tabs open in the same dir
+source /etc/profile.d/vte.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -110,9 +113,10 @@ alias ll="ls -lh"
 alias c="code ."
 alias s="cd .."
 
-alias zs='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py -s `'
-alias zj='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
-alias z='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py`'
+alias vi="vim"
+alias zs='cd ` ~/dev/dbnomics/custom-scripts/print_fetcher_dir.py -s `'
+alias zj='cd ` ~/dev/dbnomics/custom-scripts/print_fetcher_dir.py -j `'
+alias z='cd ` ~/dev/dbnomics/custom-scripts/print_fetcher_dir.py`'
 alias gig='gitg --all &!'
 alias ggui='git gui &!'
 
