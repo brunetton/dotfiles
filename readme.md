@@ -11,6 +11,7 @@
   * zshrc => ~/.zshrc
   * sxhkdrc => ~/.config/sxhkd/sxhkdrc
   * nanorc => ~/.nanorc
+  * redshift.conf => ~/.config/redshift.conf
 
 ## See also
 
