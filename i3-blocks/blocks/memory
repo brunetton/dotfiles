@@ -8,7 +8,7 @@ SOURCE=$(echo "${INSTANCE}" | awk -F ';' '{print $1}')
 DISPLAY=$(echo "${INSTANCE}" | awk -F ';' '{print $2}')
 
 if [[ "${SOURCE}" = "mem" ]]; then
-  URGENT_VALUE=90
+  URGENT_VALUE=85
 elif [[ "${SOURCE}" = "swap" ]]; then
   URGENT_VALUE=50
 fi

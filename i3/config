@@ -167,30 +167,6 @@ bar {
 # I love tabs
 workspace_layout tabbed
 
-bindsym $mod+Shift+c exec chromium
-bindsym $mod+Shift+f exec ~/bin/firefox-bin
-bindsym $mod+Shift+z exec zim --standalone
-bindsym $mod+Shift+y exec pidgin
-bindsym $mod+Shift+m exec clementine
-bindsym $mod+Shift+e exec nemo --no-desktop
-bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
-bindsym $mod+Shift+s exec ~/bin/suspend_confirm
-bindsym $mod+Shift+t exec gnome-terminal
-
-# Screenshot
-bindsym Print exec gnome-screenshot --interactive
-# volume control
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-5%' && pkill -RTMIN+10 i3blocks
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+5%' && pkill -RTMIN+10 i3blocks
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks
-# brightness control
-# bindsym XF86MonBrightnessDown exec xbacklight -steps 1 -time 0 -dec 5
-# bindsym XF86MonBrightnessUp exec xbacklight -steps 1 -time 0 -inc 10
-# Switch to xrandr since xbacklight produces an error and does not produce any effect since some weeks.
-
-#bindsym XF86MonBrightnessDown exec ~/.config/i3blocks/brightness-via-xrandr -0.1 && pkill -RTMIN+20 i3blocks
-#bindsym XF86MonBrightnessUp exec ~/.config/i3blocks/brightness-via-xrandr +0.1 && pkill -RTMIN+20 i3blocks
-
 # bindsym $mod+Ctrl+Right workspace next
 # bindsym $mod+Ctrl+Left workspace prev
 # bindsym $mod+Ctrl+Shift+Left move container to workspace prev; workspace prev
@@ -240,7 +216,7 @@ for_window [title="MediaInfo"] floating enable
 #for_window [class="VirtualBox"] floating disable
 #for_window [class="VirtualBox" title="Windows.*"] floating enable
 #for_window [class="VirtualBox" title=".*Virtual Machine.*"] floating enable
-for_window [class="VirtualBox"] floating enable
+# for_window [class="VirtualBox"] floating enable
 for_window [class="(j|J)ack-keyboard"] floating enable
 for_window [title="^setBfree$"] floating enable
 for_window [title="^GMIDImonitor$"] floating enable
@@ -260,7 +236,34 @@ exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
+exec --no-startup-id blueman-applet
 # exec --no-startup-id xfsettingsd --replace
 # exec --no-startup-id xrandr --dpi 80
 # reload
 
+# exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+# exec_always --no-startup-id gnome-power-manager
+
+bindsym $mod+Shift+c exec chromium
+bindsym $mod+Shift+f exec ~/bin/firefox-bin
+bindsym $mod+Shift+z exec zim --standalone
+bindsym $mod+Shift+y exec pidgin
+bindsym $mod+Shift+m exec clementine
+bindsym $mod+Shift+e exec nemo --no-desktop
+bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
+bindsym $mod+Shift+s exec ~/bin/suspend_confirm
+bindsym $mod+Shift+t exec lxterminal
+
+# Screenshot
+bindsym Print exec gnome-screenshot --interactive
+# volume control
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ '-5%' && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ '+5%' && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && pkill -RTMIN+10 i3blocks
+# brightness control
+# bindsym XF86MonBrightnessDown exec xbacklight -steps 1 -time 0 -dec 5
+# bindsym XF86MonBrightnessUp exec xbacklight -steps 1 -time 0 -inc 10
+# Switch to xrandr since xbacklight produces an error and does not produce any effect since some weeks.
+
+#bindsym XF86MonBrightnessDown exec ~/.config/i3blocks/brightness-via-xrandr -0.1 && pkill -RTMIN+20 i3blocks
+#bindsym XF86MonBrightnessUp exec ~/.config/i3blocks/brightness-via-xrandr +0.1 && pkill -RTMIN+20 i3blocks

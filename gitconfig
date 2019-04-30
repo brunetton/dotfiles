@@ -52,8 +52,7 @@
     pager = cat
     editor = vim
 [gui]
-    fontdiff = -family \"DejaVu Sans Mono\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-    fontui = -family \"DejaVu Sans\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+    spellingdictionary = none
 [pull]
     # I don't want to have merge commits when pulling code
     rebase = true

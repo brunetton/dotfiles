@@ -2,7 +2,7 @@ XF86Audio{Stop,Play}
     xte 'key {Page_Up,Page_Down}'
 XF86Audio{Prev,Next}
     xte 'key {Home,End}'
-control + XF86Audio{Stop,Play}
-    xte 'keydown Control_L' 'key {Page_Up,Page_Down}' 'keyup Control_L'
+control + XF86Audio{Stop,Play,Prev,Next}
+    xte 'keydown Control_L' 'key {Page_Up,Page_Down,Home,End}' 'keyup Control_L'
 shift + XF86Audio{Prev,Next}
     xte 'keydown Shift_L' 'key {Home,End}' 'keyup Shift_L'
