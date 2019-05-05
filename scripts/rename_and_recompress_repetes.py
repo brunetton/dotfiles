@@ -10,8 +10,11 @@ import sys
 
 
 '''To be used with wav dir in argument.
-Looks for repete's name in begining of folder name: "r43b - 12 juin" => name : "r43b"
-Keeps wav files in wav/ subdir
+- looks for repete's name in begining of folder name: "r43b - 12 juin" => name : "r43b"
+- for each file of dir:
+    - compress file to mp3
+    - rename to 'rxx - ' + original_name + '.mp3'
+    - move original wav to a subfolder
 '''
 
 
@@ -21,12 +24,12 @@ LAME_OPTIONS = "-V2 --abr 96"
 
 LAME_ID3_OPTIONS = '--tt "{title}" --tl "{album}"'
 
-# File with ID3 artist name tag (searched on folder upon given folder)
+# File with ID3 artist name tag (searched on parent of given folder)
 ID3_ARTIST_TAG_FILENAME = "id3_artist_tag"
 
 
 if len(sys.argv) < 2:
-    print "Working folder needed"
+    print("Working folder needed")
     sys.exit(-1)
 
 files_dir = sys.argv[1]
@@ -44,7 +47,7 @@ if not os.path.exists(wav_subfolder):
 id3_filename = os.path.abspath(os.path.join(files_dir, '..', ID3_ARTIST_TAG_FILENAME))
 artist_lame_option = ''
 if os.path.exists(id3_filename):
-    print "=> Found id3 filename; using it"
+    print("=> Found id3 filename; using it")
     artist_name = open(id3_filename, 'r').readline().strip()
     artist_lame_option = '--ta "{}"'.format(artist_name)
 
@@ -52,7 +55,7 @@ wav_files = glob.glob(os.path.join(files_dir, "*.wav")) + glob.glob(os.path.join
 assert wav_files, "No wav files found in {!r}".format(files_dir)
 for wav_file in sorted(wav_files):
     filename = os.path.basename(wav_file)
-    print "-> {}".format(filename)
+    print("-> {}".format(filename))
     song_name = filename[:-4]
     song_name_with_repete = "{} - {}".format(song_name, repete_name)
     mp3_filename = song_name_with_repete + '.mp3'
