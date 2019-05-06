@@ -245,7 +245,7 @@ exec --no-startup-id blueman-applet
 # exec_always --no-startup-id gnome-power-manager
 
 bindsym $mod+Shift+c exec chromium
-bindsym $mod+Shift+f exec ~/bin/firefox-bin
+bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
