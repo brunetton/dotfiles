@@ -232,7 +232,7 @@ bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7080/send/left
 bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7080/send/right
 
 
-exec xterm -e "/home/bruno/dev/i3-workspacesgrid/i3-grid.py start-server"
+exec --no-startup-id "/home/bruno/dev/i3-workspacesgrid/i3-grid.py start-server"
 
 
 for_window [title="MediaInfo"] floating enable
@@ -260,4 +260,4 @@ exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
-
+exec --no-startup-id ~/bin/bin/xbanish
