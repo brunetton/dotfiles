@@ -243,6 +243,9 @@ bindsym $mod+Shift+s exec ~/bin/suspend_confirm
 bindsym $mod+Shift+t exec xfce4-terminal
 bindsym $mod+d exec --no-startup-id ulauncher-toggle
 
+# Click
+bindings $mod+c exec --no-startup-id xdotool click 1
+
 # Screenshot
 bindsym Print exec gnome-screenshot --interactive
 # volume control
