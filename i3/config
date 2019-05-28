@@ -40,8 +40,13 @@ bindsym $mod+Shift+w kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
+<<<<<<< HEAD
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop  --display-binary --dmenu="dmenu -l 30 -p Run"
+=======
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id j4-dmenu-desktop  --display-binary --dmenu="dmenu -l 30 -p Run"
+>>>>>>> master
 
 
 # change focus
@@ -237,6 +242,9 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
 exec --no-startup-id sxhkd
 exec --no-startup-id blueman-applet
+exec --no-startup-id xbanish
+exec --no-startup-id ulauncher --hide-window
+
 # exec --no-startup-id xfsettingsd --replace
 # exec --no-startup-id xrandr --dpi 80
 # reload
@@ -252,7 +260,8 @@ bindsym $mod+Shift+m exec clementine
 bindsym $mod+Shift+e exec nemo --no-desktop
 bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
 bindsym $mod+Shift+s exec ~/bin/suspend_confirm
-bindsym $mod+Shift+t exec lxterminal
+bindsym $mod+Shift+t exec xfce4-terminal
+bindsym $mod+d exec --no-startup-id ulauncher-toggle
 
 # Screenshot
 bindsym Print exec gnome-screenshot --interactive
