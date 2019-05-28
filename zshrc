@@ -62,13 +62,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  #autojump,
-  virtualenvwrapper
-  # https://github.com/abhigenie92/zsh_to_fish
-  zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
-)
+# plugins=(
+#   git
+#   #autojump,
+#   virtualenvwrapper
+#   # https://github.com/abhigenie92/zsh_to_fish
+#   zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting
+# )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,7 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # apt install autojump
 source /usr/share/autojump/autojump.zsh
 
-source ~/bin/bin/zsh-autoenv/autoenv.zsh
+# source ~/bin/bin/zsh-autoenv/autoenv.zsh
 
 # Make new tabs open in the same dir
 source /etc/profile.d/vte.sh
@@ -146,3 +146,17 @@ else
    echo "Starting ssh-agent"
    eval `ssh-agent | tee ~/.ssh/agent.env`
 fi
+
+# Antigen
+source /usr/share/zsh/share/antigen.zsh
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+antigen bundle git
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+# Fish-like auto suggestions
+antigen bundle zsh-users/zsh-autosuggestions
+# Extra zsh completions
+antigen bundle zsh-users/zsh-completions
+# Tell antigen that you're done
+antigen apply
