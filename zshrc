@@ -136,13 +136,13 @@ fixssh() {
 
 # SSH agent
 # https://yashagarwal.in/posts/2017/12/setting-up-ssh-agent-in-i3/
-#if [ -f ~/.ssh/agent.env ] ; then
-#    . ~/.ssh/agent.env > /dev/null
-#    if ! kill -0 $SSH_AGENT_PID > /dev/null 2>&1; then
-#        echo "Stale agent file found. Spawning new agent… "
-#        eval `ssh-agent | tee ~/.ssh/agent.env`
-#    fi
-#else
-#    echo "Starting ssh-agent"
-#    eval `ssh-agent | tee ~/.ssh/agent.env`
-#fi
+if [ -f ~/.ssh/agent.env ] ; then
+   . ~/.ssh/agent.env > /dev/null
+   if ! kill -0 $SSH_AGENT_PID > /dev/null 2>&1; then
+       echo "Stale agent file found. Spawning new agent… "
+       eval `ssh-agent | tee ~/.ssh/agent.env`
+   fi
+else
+   echo "Starting ssh-agent"
+   eval `ssh-agent | tee ~/.ssh/agent.env`
+fi
