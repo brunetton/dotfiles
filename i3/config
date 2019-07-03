@@ -160,37 +160,37 @@ workspace_layout tabbed
 
 ## i3-workspacesgrid config
 # Direct acces to desktops
-bindsym $mod+ampersand exec curl http://localhost:7080/jump/1
-bindsym $mod+eacute exec curl http://localhost:7080/jump/2
-bindsym $mod+quotedbl exec curl http://localhost:7080/jump/3
-bindsym $mod+apostrophe exec curl http://localhost:7080/jump/4
-bindsym $mod+parenleft exec curl http://localhost:7080/jump/5
-bindsym $mod+minus exec curl http://localhost:7080/jump/6
-bindsym $mod+egrave exec curl http://localhost:7080/jump/7
-bindsym $mod+underscore exec curl http://localhost:7080/jump/8
-bindsym $mod+ccedilla exec curl http://localhost:7080/jump/9
-bindsym $mod+agrave exec curl http://localhost:7080/jump/10
+bindsym $mod+ampersand exec curl http://localhost:7088/jump/1
+bindsym $mod+eacute exec curl http://localhost:7088/jump/2
+bindsym $mod+quotedbl exec curl http://localhost:7088/jump/3
+bindsym $mod+apostrophe exec curl http://localhost:7088/jump/4
+bindsym $mod+parenleft exec curl http://localhost:7088/jump/5
+bindsym $mod+minus exec curl http://localhost:7088/jump/6
+bindsym $mod+egrave exec curl http://localhost:7088/jump/7
+bindsym $mod+underscore exec curl http://localhost:7088/jump/8
+bindsym $mod+ccedilla exec curl http://localhost:7088/jump/9
+bindsym $mod+agrave exec curl http://localhost:7088/jump/10
 # Direct sending containers to workspaces
-bindsym $mod+Shift+ampersand exec curl http://localhost:7080/send/1
-bindsym $mod+Shift+eacute exec curl http://localhost:7080/send/2
-bindsym $mod+Shift+quotedbl exec curl http://localhost:7080/send/3
-bindsym $mod+Shift+apostrophe exec curl http://localhost:7080/send/4
-bindsym $mod+Shift+5 exec curl http://localhost:7080/send/5
-bindsym $mod+Shift+minus exec curl http://localhost:7080/send/6
-bindsym $mod+Shift+egrave exec curl http://localhost:7080/send/7
-bindsym $mod+Shift+underscore exec curl http://localhost:7080/send/8
-bindsym $mod+Shift+ccedilla exec curl http://localhost:7080/send/9
-bindsym $mod+Shift+agrave exec curl http://localhost:7080/send/10
+bindsym $mod+Shift+ampersand exec curl http://localhost:7088/send/1
+bindsym $mod+Shift+eacute exec curl http://localhost:7088/send/2
+bindsym $mod+Shift+quotedbl exec curl http://localhost:7088/send/3
+bindsym $mod+Shift+apostrophe exec curl http://localhost:7088/send/4
+bindsym $mod+Shift+5 exec curl http://localhost:7088/send/5
+bindsym $mod+Shift+minus exec curl http://localhost:7088/send/6
+bindsym $mod+Shift+egrave exec curl http://localhost:7088/send/7
+bindsym $mod+Shift+underscore exec curl http://localhost:7088/send/8
+bindsym $mod+Shift+ccedilla exec curl http://localhost:7088/send/9
+bindsym $mod+Shift+agrave exec curl http://localhost:7088/send/10
 # Moving througth workspaces
-bindsym $mod+Ctrl+Up exec curl http://localhost:7080/up
-bindsym $mod+Ctrl+Down exec curl http://localhost:7080/down
-bindsym $mod+Ctrl+Left exec curl http://localhost:7080/left
-bindsym $mod+Ctrl+Right exec curl http://localhost:7080/right
+bindsym $mod+Ctrl+Up exec curl http://localhost:7088/up
+bindsym $mod+Ctrl+Down exec curl http://localhost:7088/down
+bindsym $mod+Ctrl+Left exec curl http://localhost:7088/left
+bindsym $mod+Ctrl+Right exec curl http://localhost:7088/right
 # Sending containers to workspaces
-bindsym $mod+Ctrl+Shift+Up exec curl http://localhost:7080/send/up
-bindsym $mod+Ctrl+Shift+Down exec curl http://localhost:7080/send/down
-bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7080/send/left
-bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7080/send/right
+bindsym $mod+Ctrl+Shift+Up exec curl http://localhost:7088/send/up
+bindsym $mod+Ctrl+Shift+Down exec curl http://localhost:7088/send/down
+bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7088/send/left
+bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7088/send/right
 
 
 exec --no-startup-id "~/dev/i3-workspacesgrid/i3-grid.py start-server"
@@ -233,7 +233,7 @@ exec --no-startup-id ulauncher --hide-window
 # exec_always --no-startup-id gnome-power-manager
 
 bindsym $mod+Shift+c exec chromium
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec firefox --ProfileManager
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
