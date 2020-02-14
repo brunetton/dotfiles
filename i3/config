@@ -207,6 +207,7 @@ for_window [title="^setBfree$"] floating enable
 for_window [title="^GMIDImonitor$"] floating enable
 for_window [class="(j|J)alv"] floating enable
 for_window [class="(x|X)sane"] floating enable
+for_window [class="(p|P)eazip"] floating enable
 
 # Organize workspaces
 set $souk 10
@@ -224,6 +225,7 @@ exec --no-startup-id sxhkd
 exec --no-startup-id blueman-applet
 exec --no-startup-id xbanish
 exec --no-startup-id ulauncher --hide-window
+exec --no-startup-id xfce4-session
 
 # exec --no-startup-id xfsettingsd --replace
 # exec --no-startup-id xrandr --dpi 80

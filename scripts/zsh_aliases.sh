@@ -1,0 +1,7 @@
+alias yay-update="yay -Sy"
+alias yay-search-file="yay -Qo"
+alias yay-list-package-files="yay -Ql"
+alias yay-show-non-installed="yay -Si"
+alias yay-show-installed="yay -Qi"
+alias yay-show-all-packages="yay -Qq | fzf --preview 'yay -Qil {}' --layout=reverse --bind 'enter:execute(yay -Qil {} | less)'"
+alias yay-uninstall="yay -Rs"

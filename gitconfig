@@ -6,8 +6,14 @@
 [includeIf "gitdir:~/dev/"]
     path = ~/dev/gitconfig
 
-[includeIf "gitdir:~/dev/dbnomics/"]
-    path = ~/dev/dbnomics/gitconfig
+[includeIf "gitdir:~/.passwords/"]
+    path = ~/.passwords/gitconfig
+
+[includeIf "gitdir:~/dev/jailbreak/"]
+    path = ~/dev/jailbreak/gitconfig
+
+[includeIf "gitdir:~/dev/jailbreak/dbnomics/"]
+    path = ~/dev/jailbreak/dbnomics/gitconfig
 
 [alias]
     ci = commit
