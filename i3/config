@@ -155,7 +155,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #status_command i3status
+<<<<<<< HEAD
         status_command i3blocks -c ~/.i3-blocks/i3blocks.conf
+=======
+        status_command i3blocks -c ~/dev/dotfiles/i3-blocks/i3blocks.conf
+>>>>>>> updates
 }
 
 
@@ -167,7 +171,11 @@ bar {
 # I love tabs
 workspace_layout tabbed
 
+<<<<<<< HEAD
 bindsym $mod+Shift+c exec google-chrome
+=======
+bindsym $mod+Shift+c exec chromium
+>>>>>>> updates
 bindsym $mod+Shift+f exec ~/bin/firefox-bin
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
@@ -246,6 +254,7 @@ for_window [title="^setBfree$"] floating enable
 for_window [title="^GMIDImonitor$"] floating enable
 for_window [class="(j|J)alv"] floating enable
 for_window [class="(x|X)sane"] floating enable
+for_window [class="(q|Q)jackctl"] floating enable
 
 # Organize workspaces
 set $souk 10
@@ -263,3 +272,4 @@ exec --no-startup-id sxhkd
 # exec --no-startup-id xfsettingsd --replace
 exec --no-startup-id xrandr --dpi 80
 # reload
+exec --no-startup-id xfce4-session
