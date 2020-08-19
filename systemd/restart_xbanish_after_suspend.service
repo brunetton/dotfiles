@@ -1,0 +1,14 @@
+[Unit]
+Description=Restart xbanish after suspend
+After=suspend.target
+After=hibernate.target
+After=hybrid-sleep.target
+
+[Service]
+User=bruno
+ExecStart=~bruno/dev/dotfiles/systemd/restart_xbanish_after_suspend.sh
+
+[Install]
+WantedBy=suspend.target
+WantedBy=hibernate.target
+WantedBy=hybrid-sleep.target
