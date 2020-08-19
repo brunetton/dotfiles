@@ -1,0 +1,9 @@
+Script executed each time Qjackctl starts jack
+
+# Install
+
+    sudo pip3 install jack-matchmaker
+
+## List devices
+
+    jack-matchmaker -oian
