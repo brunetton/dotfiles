@@ -19,6 +19,7 @@
     ci = commit
     co = checkout
     st = status
+    chp = cherry-pick
     sed = !sh -c 'git grep --null --full-name --name-only -e \"$1\" | xargs -0 perl -i -p -e \"s/$1/$2/g\"' -
 
 [color]

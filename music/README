@@ -7,3 +7,7 @@ Script executed each time Qjackctl starts jack
 ## List devices
 
     jack-matchmaker -oian
+
+ou
+
+    https://github.com/brunetton/jack-ports-list

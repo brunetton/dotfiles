@@ -247,9 +247,9 @@ source /usr/share/autojump/autojump.zsh
 export PATH=$PATH:~/bin/
 
 # Node
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Ruby version manager
 # source /etc/profile.d/rvm.sh
@@ -289,9 +289,20 @@ fixssh() {
 # source ~/.zplug/init.zsh
 # zplug "zimfw/zimfw"
 
-# To add a plugin: git submodule add [url], and restart zsh
-ZAPACK_REPODIR=~/dev/dotfiles/zsh-plugins
-source ~/dev/dotfiles/zsh-zapack/zapack.zsh
+####  PLUGINS ####
+
+# antibody plugin manager
+# http://getantibody.github.io/
+source <(antibody init)
+antibody bundle Tarrasch/zsh-autoenv
+# antibody bundle romkatv/powerlevel10k
+
+# https://github.com/YourFin/pure-agnoster
+  # antibody bundle mafredri/zsh-async
+  # antibody bundle yourfin/pure-agnoster
+
+####  /PLUGINS ####
+
 
 # Custom aliases
 source /home/bruno/dev/dotfiles/scripts/zsh_aliases.sh
@@ -301,3 +312,26 @@ unsetopt share_history
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/home/bruno/.netlify/helper/path.zsh.inc' ]; then source '/home/bruno/.netlify/helper/path.zsh.inc'; fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+
+# __conda_setup="$('/home/bruno/.pyenv/versions/miniconda3-latest/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/bruno/.pyenv/versions/miniconda3-latest/etc/profile.d/conda.sh" ]; then
+#         . "/home/bruno/.pyenv/versions/miniconda3-latest/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/bruno/.pyenv/versions/miniconda3-latest/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+
+# <<< conda initialize <<<
+
+
+export PATH="$HOME/.poetry/bin:$PATH"

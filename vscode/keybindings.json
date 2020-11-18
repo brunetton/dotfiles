@@ -181,5 +181,70 @@
     {
         "key": "alt+right",
         "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-loremWhatever.loremDefault",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused && activeEditor == 'workbench.editor.notebook'"
     }
 ]

@@ -139,8 +139,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        #status_command i3status
+        # status_command i3status
         status_command i3blocks -c /home/bruno/dev/dotfiles/i3-blocks/i3blocks.conf
+        tray_output none  # I don't want apps icons to be in i3 bar, but in xfce bar
 }
 
 
@@ -208,6 +209,7 @@ for_window [title="^GMIDImonitor$"] floating enable
 for_window [class="(j|J)alv"] floating enable
 for_window [class="(x|X)sane"] floating enable
 for_window [class="(p|P)eazip"] floating enable
+for_window [class="qjackctl"] floating enable
 for_window [class="Xfdesktop" title="Bureau"] floating disable
 
 # Organize workspaces
@@ -220,11 +222,11 @@ exec --no-startup-id parcellite
 exec --no-startup-id zim
 exec --no-startup-id setxkbmap -option caps:none
 exec --no-startup-id nm-applet
-exec --no-startup-id redshift-gtk
+# exec --no-startup-id redshift-gtk
 exec --no-startup-id pnmixer
-exec --no-startup-id sxhkd
+# exec --no-startup-id sxhkd
 exec --no-startup-id blueman-applet
-exec --no-startup-id xbanish
+exec --no-startup-id ~/bin/xbanish
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id xfce4-session
 
@@ -236,18 +238,21 @@ exec --no-startup-id xfce4-session
 # exec_always --no-startup-id gnome-power-manager
 
 bindsym $mod+Shift+c exec chromium
-bindsym $mod+Shift+f exec firefox --ProfileManager
+bindsym $mod+Shift+f exec firefox --profile ~/.mozilla/firefox/1c3xke53.default-release-2
+bindsym $mod+Ctrl+Shift+f exec firefox --ProfileManager
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
 bindsym $mod+Shift+e exec nemo --no-desktop
-bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
+# bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
 bindsym $mod+Shift+s exec ~/bin/suspend_confirm
 bindsym $mod+Shift+t exec xfce4-terminal
+bindsym $mod+Shift+h exec hamster-snap
 bindsym $mod+d exec --no-startup-id ulauncher-toggle
+bindsym $mod+s exec flameshot gui
 
 # Click
-bindings $mod+c exec --no-startup-id xdotool click 1
+# bindings $mod+c exec --no-startup-id xdotool click 1
 
 # Screenshot
 bindsym Print exec gnome-screenshot --interactive
