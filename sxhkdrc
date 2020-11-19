@@ -1,2 +1,5 @@
-X68Audio{Prev,Next}
-    xte 'key {Page_Up,Page_Down}'
+shift + XF86Audio{Prev,Next,Play}
+    spotifycli --{prev,next,playpause}
+
+#XF86Audio{Prev,Next}  => géré par Xfce, parce que là c'est lent
+#    xte 'key {Home,End}'
