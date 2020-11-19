@@ -1,0 +1,6 @@
+#!/bin/bash
+HAMSTER_DB_FILE_PATH=~/snap/hamster-snap/47/.local/share/hamster/hamster.db /home/bruno/dev/dotfiles/scripts/hamster-get_current_activity_name.py
+
+case $BLOCK_BUTTON in
+1) /home/bruno/dev/gitlabtimesync/stop_current_activity.py;;
+esac
