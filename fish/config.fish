@@ -11,7 +11,7 @@ alias gg="git log --oneline --abbrev-commit --all --graph --decorate --color"
 alias c="code ."
 
 function z
-    cd (/home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py)
+    cd (/home/bruno/dev/dbnomics/fetchers/print_fetcher_dir.py $argv)
 end
 
 function zs

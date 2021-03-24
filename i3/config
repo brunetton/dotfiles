@@ -263,3 +263,5 @@ exec --no-startup-id sxhkd
 exec --no-startup-id ~/bin/bin/xbanish
 exec --no-startup-id ulauncher --hide-window
 bindsym $mod+d exec --no-startup-id ulauncher-toggle
+bindsym $mod+s exec flameshot gui
+

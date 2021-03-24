@@ -71,6 +71,8 @@
         "command": "editor.unfold",
         "when": "editorTextFocus"
     },
+
+    // Unset Gitlens shortkeys
     {
         "key": "ctrl+shift+g shift+[Comma]",
         "command": "-gitlens.diffWithNext",
