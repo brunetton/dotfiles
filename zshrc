@@ -311,7 +311,7 @@ source /home/bruno/dev/dotfiles/scripts/zsh_aliases.sh
 unsetopt share_history
 
 # The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/home/bruno/.netlify/helper/path.zsh.inc' ]; then source '/home/bruno/.netlify/helper/path.zsh.inc'; fi
+# if [ -f '/home/bruno/.netlify/helper/path.zsh.inc' ]; then source '/home/bruno/.netlify/helper/path.zsh.inc'; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -334,4 +334,10 @@ if [ -f '/home/bruno/.netlify/helper/path.zsh.inc' ]; then source '/home/bruno/.
 # <<< conda initialize <<<
 
 
-export PATH="$HOME/.poetry/bin:$PATH"
+# export PATH="$HOME/.poetry/bin:$PATH"
+
+# Don't ask for confirmation when rm
+setopt rmstarsilent
+# Don't alert when redirecting an output to an existing file
+setopt clobber
+
