@@ -6,6 +6,28 @@ alias ll="ls -lh"
 alias la="ls -al"
 alias s="cd .."
 alias vi="vim"
+alias start_jupyter-notebook-dbnomics="jupyter notebook --notebook-dir ~/dev/jailbreak/dbnomics/notebooks/ --no-browser --NotebookApp.token=''"
+alias start_jupyter-notebook-here="jupyter-notebook --notebook-dir . --no-browser --NotebookApp.token=''"
+
+docker-rm-stopped() {
+    docker rm $(docker ps -a -q)
+}
+
+docker-bash-i() {
+    if [[ "$1" == "" ]]; then
+        echo "Usage: $0 [image_id]"
+        return 0
+    fi
+    docker run --rm -it "$1" bash
+}
+
+docker-bash-c() {
+    if [[ "$1" == "" ]]; then
+        echo "Usage: $0 [container_id]"
+        return 0
+    fi
+    docker exec -it "$1" bash
+}
 
 # alias yay-list-package-files="yay -Ql"
 # alias yay-search-file="yay -Qo"

@@ -237,13 +237,14 @@ exec --no-startup-id xfce4-session
 # exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 # exec_always --no-startup-id gnome-power-manager
 
-bindsym $mod+Shift+c exec chromium
+bindsym $mod+Shift+c exec google-chrome
 bindsym $mod+Shift+f exec firefox --profile ~/.mozilla/firefox/1c3xke53.default-release-2
 bindsym $mod+Ctrl+Shift+f exec firefox --ProfileManager
 bindsym $mod+Shift+z exec zim --standalone
 bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
-bindsym $mod+Shift+e exec nemo --no-desktop
+# bindsym $mod+Shift+e exec nemo --no-desktop
+bindsym $mod+Shift+e exec dolphin
 # bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
 bindsym $mod+Shift+s exec ~/bin/suspend_confirm
 bindsym $mod+Shift+t exec xfce4-terminal
