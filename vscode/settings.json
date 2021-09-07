@@ -6,7 +6,9 @@
     "**/.DS_Store": true,
     ".vscode": true,
     ".ipynb*": true,
-    "**/*.{pyc,pyo}": { "when": "$(basename).py" }
+    "**/*.{pyc,pyo}": {
+      "when": "$(basename).py"
+    }
   },
   "terminal.integrated.fontSize": 11,
   "window.menuBarVisibility": "toggle",
@@ -29,6 +31,7 @@
     "dbnomics",
     "etree",
     "iterfind",
+    "itertools",
     "jsonl",
     "jsons",
     "leboncoin",
@@ -36,6 +39,7 @@
     "nextcloud",
     "openpyxl",
     "pformat",
+    "pydantic",
     "pytest",
     "shutil",
     "solr",
@@ -43,7 +47,9 @@
     "toolz"
   ],
   "[python]": {
-    "editor.rulers": [120]
+    "editor.rulers": [
+      120
+    ]
   },
   "[javascript]": {
     "editor.formatOnSave": true,
@@ -51,7 +57,9 @@
   },
   "workbench.startupEditor": "none",
   "arduino.path": "/home/bruno2/bin/bin/arduino-1.8.8",
-  "arduino.additionalUrls": ["http://drazzy.com/package_drazzy.com_index.json"],
+  "arduino.additionalUrls": [
+    "http://drazzy.com/package_drazzy.com_index.json"
+  ],
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -109,7 +117,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "TomasHubelbauer.vscode-markdown-table-format"
   },
-  "window.zoomLevel": 0,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -128,7 +135,7 @@
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "yaml.schemas": {
-    "file:///home/bruno/.vscode/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+    "file:///toc.schema.json": "/toc\\.yml/i"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -136,17 +143,52 @@
   "javascript.format.enable": false,
   "gitlens.views.compare.files.layout": "tree", // to make editorconfig work
   "python.linting.pylintArgs": [
-    "--rcfile", "/home/bruno/dev/jailbreak/dbnomics/code-style/pylintrc"
+    "--rcfile",
+    "/home/bruno/dev/jailbreak/dbnomics/code-style/pylintrc"
   ],
   "python.linting.mypyCategorySeverity.error": "Information",
-"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
-"editor.renderControlCharacters": true,
-"extensions.ignoreRecommendations": false,
-"jupyter.askForKernelRestart": false,
-"jupyter.disableJupyterAutoStart": true,
-"jupyter.allowImportFromNotebook": false,
-"[jsonc]": {
-  "editor.defaultFormatter": "vscode.json-language-features"
-},
-"workbench.colorTheme": "Visual Studio Dark"
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+  "editor.renderControlCharacters": true,
+  "extensions.ignoreRecommendations": false,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.disableJupyterAutoStart": true,
+  "jupyter.allowImportFromNotebook": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.colorTheme": "Default Light+",
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.linux": "/home/bruno/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/bruno/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/bruno/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "gitlens.blame.highlight.enabled": false,
+  "importMagic.maxColumns": 120,
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "[scss]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "python.languageServer": "Pylance",
+  "gitlens.codeLens.enabled": false,
+  "explorer.confirmDelete": false,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
+  "tailwindCSS.includeLanguages": {
+    "Svelte": "html"
+  },
+  "svg.preview.mode": "img",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
