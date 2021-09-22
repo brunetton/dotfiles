@@ -1,4 +1,3 @@
-alias c="code ."
 alias ggui='git gui &!'
 alias gig='gitg --all &!'
 alias gitg-reflog='gitg --all `git reflog | cut -c1-7`&!'
@@ -27,6 +26,14 @@ docker-bash-c() {
         return 0
     fi
     docker exec -it "$1" bash
+}
+
+c() {
+    if [[ "$1" == "" ]]; then
+        code .
+    else
+        code --new-window "$( dirname "$1" )" "$1"
+    fi
 }
 
 # alias yay-list-package-files="yay -Ql"
