@@ -240,8 +240,8 @@ exec --no-startup-id xfce4-session
 bindsym $mod+Shift+c exec google-chrome
 bindsym $mod+Shift+f exec firefox --profile ~/.mozilla/firefox/1c3xke53.default-release-2
 bindsym $mod+Ctrl+Shift+f exec firefox --ProfileManager
-bindsym $mod+Shift+z exec zim --standalone
-bindsym $mod+Shift+y exec pidgin
+# bindsym $mod+Shift+z exec zim --standalone
+# bindsym $mod+Shift+y exec pidgin
 bindsym $mod+Shift+m exec clementine
 # bindsym $mod+Shift+e exec nemo --no-desktop
 bindsym $mod+Shift+e exec dolphin
@@ -251,6 +251,7 @@ bindsym $mod+Shift+t exec xfce4-terminal
 bindsym $mod+Shift+h exec hamster-snap
 bindsym $mod+d exec --no-startup-id ulauncher-toggle
 bindsym $mod+s exec flameshot gui
+bindsym --release $mod+Shift+x exec --no-startup-id xkill
 
 # Click
 # bindings $mod+c exec --no-startup-id xdotool click 1
