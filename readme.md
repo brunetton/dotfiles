@@ -15,6 +15,7 @@
   * nanorc => ~/.nanorc
   * redshift.conf => ~/.config/redshift.conf
   * ln -s ~bruno/dev/dotfiles/systemd/restart_xbanish_after_suspend.service /etc/systemd/system/restart_xbanish.service
+  * reaper-kb.ini => /home/bruno/.config/REAPER/
 
 ## See also
 
