@@ -7,6 +7,8 @@ alias s="cd .."
 alias vi="vim"
 alias start_jupyter-notebook-dbnomics="jupyter notebook --notebook-dir ~/dev/jailbreak/dbnomics/notebooks/ --no-browser --NotebookApp.token=''"
 alias start_jupyter-notebook-here="jupyter-notebook --notebook-dir . --no-browser --NotebookApp.token=''"
+alias less="less -R"  # Less with colors enabled
+alias fd="fdfind"
 
 docker-rm-stopped() {
     docker rm $(docker ps -a -q)
@@ -35,6 +37,7 @@ c() {
         code --new-window "$( dirname "$1" )" "$1"
     fi
 }
+
 
 # alias yay-list-package-files="yay -Ql"
 # alias yay-search-file="yay -Qo"
