@@ -115,6 +115,9 @@ alias zj='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py -j `'
 alias z='cd ` ~/dev/dbnomics/fetchers/print_fetcher_dir.py`'
 alias gig='gitg --all &!'
 alias ggui='git gui &!'
+alias less="less -R"  # Less with colors enabled
+alias fd="fdfind"
+
 
 export PATH=$PATH:~/bin/
 
@@ -130,3 +133,13 @@ fixssh() {
         eval $(tmux show-env -s |grep '^SSH_')
 }
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+eval "$(pyenv init -)"
