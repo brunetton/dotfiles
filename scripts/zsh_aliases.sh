@@ -9,7 +9,7 @@ alias start_jupyter-notebook-dbnomics="jupyter notebook --notebook-dir ~/dev/jai
 alias start_jupyter-notebook-here="jupyter-notebook --notebook-dir . --no-browser --NotebookApp.token=''"
 alias less="less -R"  # Less with colors enabled
 alias fd="fdfind"
-alias lsblk='lsblk -o NAME,SIZE,FSAVAIL,TYPE,RO,MOUNTPOINT | grep -P "^loop" -v'
+alias lsblk='lsblk -o NAME,TYPE,SIZE,FSAVAIL,RO,MOUNTPOINT | grep -P "^loop" -v'
 
 docker-rm-stopped() {
     docker rm $(docker ps -a -q)
