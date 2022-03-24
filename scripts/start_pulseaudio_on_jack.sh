@@ -1,2 +1,3 @@
 #!/bin/sh
-pulseaudio -k; sleep 2; pulseaudio -L module-jack-sink -L module-jack-source
+pactl load-module module-jack-sink
+echo "set-default-sink jack_out" | pacmd
