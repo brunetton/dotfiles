@@ -209,7 +209,8 @@ for_window [title="^GMIDImonitor$"] floating enable
 for_window [class="(j|J)alv"] floating enable
 for_window [class="(x|X)sane"] floating enable
 for_window [class="(p|P)eazip"] floating enable
-for_window [class="qjackctl"] floating enable
+for_window [class="(q|Q)jack(c|C)tl.*"] floating enable
+for_window [class="(g|G)nome-calculator"] floating enable
 for_window [class="Xfdesktop" title="Bureau"] floating disable
 
 # Organize workspaces
