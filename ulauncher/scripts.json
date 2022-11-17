@@ -1,1 +1,13 @@
-/home/bruno/.config/ulauncher/scripts.json
+[
+    {
+        "name": "Copy process command",
+        "description": "Click onto process to copy command",
+        "icon": null,
+        "script": "id=`xprop _NET_WM_PID | awk '/PID/ {print $3}'`; cat /proc/$id/cmdline | xargs -0 | xclip -selection clipboard"
+    },
+    {
+        "name": "Commit Zim notes",
+        "icon": null,
+        "script": "xterm -hold -e \"cd ~/zim-notes; git push\""
+    }
+]
