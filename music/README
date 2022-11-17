@@ -11,3 +11,4 @@ Script executed each time Qjackctl starts jack
 ou
 
     https://github.com/brunetton/jack-ports-list
+    ~/dev/jack-ports-list/jack-ports-list.py
