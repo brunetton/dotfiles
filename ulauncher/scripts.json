@@ -9,5 +9,15 @@
         "name": "Commit Zim notes",
         "icon": null,
         "script": "xterm -hold -e \"cd ~/zim-notes; git push\""
+    },
+    {
+        "name": "Mount naq (sshfs)",
+        "icon": null,
+        "script": "cd sshfs; ./mount_naq.sh"
+    },
+    {
+        "name": "Mount Google drive (~/drive)",
+        "icon": null,
+        "script": "rclone mount 'Google Drive:' ~/drive/"
     }
 ]
