@@ -1,5 +1,10 @@
 [
     {
+        "name": "Open copied path with Nemo",
+        "icon": null,
+        "script": "nemo \"`xclip -selection c -o`\" > /dev/null"
+    },
+    {
         "name": "Copy process command",
         "description": "Click onto process to copy command",
         "icon": null,
