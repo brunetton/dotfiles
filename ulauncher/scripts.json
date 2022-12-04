@@ -23,6 +23,6 @@
     {
         "name": "Mount Google drive (~/drive)",
         "icon": null,
-        "script": "rclone mount 'Google Drive:' ~/drive/"
+        "script": "rclone mount 'Google Drive:' '/home/bruno/Google drive' &"
     }
 ]
