@@ -23,6 +23,6 @@
     {
         "name": "Mount Google drive (~/drive)",
         "icon": null,
-        "script": "rclone mount 'Google Drive:' '/home/bruno/Google drive' &"
+        "script": "fusermount -u '/home/bruno/Google drive'; sleep 1; google-drive-ocamlfuse '/home/bruno/Google drive/' &"
     }
 ]
