@@ -24,5 +24,10 @@
         "name": "Mount Google drive (~/drive)",
         "icon": null,
         "script": "fusermount -u '/home/bruno/Google drive'; sleep 1; google-drive-ocamlfuse '/home/bruno/Google drive/' &"
+    },
+    {
+        "name": "Stop transferts sshfs foireux",
+        "icon": null,
+        "script": "killall kioslave5 -9"
     }
 ]
