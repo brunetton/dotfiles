@@ -29,5 +29,10 @@
         "name": "Stop transferts sshfs foireux",
         "icon": null,
         "script": "killall kioslave5 -9"
+    },
+    {
+        "name": "Resolve sync Notes conflits",
+        "icon": null,
+        "script": "/home/bruno/dev/dotfiles/scripts/open_notes_conflicts.py"
     }
 ]
