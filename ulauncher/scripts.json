@@ -13,7 +13,12 @@
     {
         "name": "Commit Zim notes",
         "icon": null,
-        "script": "xterm -hold -e \"cd ~/zim-notes; git push\""
+        "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/zim-notes; git push\""
+    },
+    {
+        "name": "Commit passwords",
+        "icon": null,
+        "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/.passwords; git add -u --ignore-removal &> /dev/null; git ci -m 'update'; git push; echo '\nEND'\""
     },
     {
         "name": "Mount naq (sshfs)",
