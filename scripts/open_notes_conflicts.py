@@ -10,6 +10,11 @@ notes_path = Path(NOTES_PATH)
 # List conflicts
 conflicts_paths = list(notes_path.glob('**/*sync-conflict*.md'))
 
+if len(conflicts_paths) == 0:
+    print('NONO')
+    os.system("zenity --notification --text 'No conflicts !' ")
+    exit(0)
+
 for conflict_path in conflicts_paths:
     print(f"-> {conflict_path}")
 
@@ -24,4 +29,6 @@ for conflict_path in conflicts_paths:
     # Move to trash
     os.system(f"trash-put \"{conflict_path}\"")  # apt install trash-cli
 
-print("END")
+# print("END")
+if len(conflicts_paths) != 0:
+    os.system("zenity --notification --text 'END' ")
