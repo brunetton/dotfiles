@@ -253,11 +253,12 @@ bindsym $mod+Shift+m exec clementine
 # bindsym $mod+Shift+e exec nemo --no-desktop
 bindsym $mod+Shift+e exec dolphin
 # bindsym $mod+Shift+h exec ~/bin/hibernate_confirm
-bindsym $mod+Shift+s exec ~/bin/suspend_confirm
+# bindsym $mod+Shift+s exec ~/bin/suspend_confirm
 bindsym $mod+Shift+t exec xfce4-terminal
 bindsym $mod+Shift+h exec hamster-snap
 bindsym $mod+d exec --no-startup-id ulauncher-toggle
 bindsym $mod+s exec flameshot gui
+bindsym $mod+Shift+s exec "sleep 3; flameshot gui"
 bindsym --release $mod+Shift+x exec --no-startup-id xkill
 
 # Click
