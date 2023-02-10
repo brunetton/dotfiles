@@ -17,6 +17,7 @@
     },
     {
         "name": "Commit passwords",
+        "description": "Commit + push",
         "icon": null,
         "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/.passwords; git add -u --ignore-removal &> /dev/null; git ci -m 'update'; git push; echo '\nEND'\""
     },
@@ -24,6 +25,11 @@
         "name": "Mount naq (sshfs)",
         "icon": null,
         "script": "cd sshfs; ./mount_naq.sh"
+    },
+    {
+        "name": "Mount tel -> ~/Android",
+        "icon": null,
+        "script": "fusermount -u ~/Android; go-mtpfs ~/Android"
     },
     {
         "name": "Mount Google drive (~/drive)",
