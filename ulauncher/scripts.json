@@ -1,6 +1,6 @@
 [
     {
-        "name": "Open copied path with Nemo",
+        "name": "Open path in clipboard with Nemo",
         "icon": null,
         "script": "nemo \"`xclip -selection c -o`\" > /dev/null"
     },
@@ -45,5 +45,15 @@
         "name": "Resolve sync Notes conflits",
         "icon": null,
         "script": "/home/bruno/dev/dotfiles/scripts/open_notes_conflicts.py"
+    },
+    {
+        "name": "Kill pause process",
+        "icon": null,
+        "script": "kill -s STOP $(xprop _NET_WM_PID | awk '/PID/ {print $3}')"
+    },
+    {
+        "name": "Kill start process",
+        "icon": null,
+        "script": "kill -s CONT $(xprop _NET_WM_PID | awk '/PID/ {print $3}')"
     }
 ]
