@@ -55,5 +55,10 @@
         "name": "Kill start process",
         "icon": null,
         "script": "kill -s CONT $(xprop _NET_WM_PID | awk '/PID/ {print $3}')"
+    },
+    {
+        "name": "Paste to QRcode",
+        "icon": null,
+        "script": "xterm -title CustomScript -hold -e \"qrencode -m 2 -t utf8 <<< '$(xclip -selection c -o)'\""
     }
 ]

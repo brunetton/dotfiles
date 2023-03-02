@@ -214,10 +214,12 @@ for_window [class="(g|G)nome-calculator"] floating enable
 for_window [class="(p|P)avucontrol"] floating enable
 for_window [title="Magnus"] floating enable
 for_window [title="feh"] floating enable
+for_window [title="CustomScript"] floating enable
 
 # Floating disabled
 for_window [class="Xfdesktop" title="Bureau"] floating disable
 for_window [class="REAPER" title="^MIDI.*"] floating disable  # Editeur MIDI Reaper
+for_window [class="neverputt"] floating disable
 
 # Organize workspaces
 set $souk 10
