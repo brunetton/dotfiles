@@ -60,5 +60,10 @@
         "name": "Paste to QRcode",
         "icon": null,
         "script": "xterm -title CustomScript -hold -e \"qrencode -m 2 -t utf8 <<< '$(xclip -selection c -o)'\""
+    },
+    {
+        "name": "Copy last downloaded file path",
+        "icon": null,
+        "script": "/bin/ls -t -d ~/Téléchargements/* | head -1 | xclip -selection clipboard"
     }
 ]
