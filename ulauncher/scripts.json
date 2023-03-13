@@ -69,6 +69,6 @@
     {
         "name": "clipboard -> basename -> clipboard",
         "icon": null,
-        "script": "basename \"$(xclip -selection c -o)\" | tr -d '\n' | xclip -selection clipboard"
+        "script": "basename \"$(xclip -selection c -o)\" | xclip -r -selection clipboard"
     }
 ]
