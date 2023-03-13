@@ -70,7 +70,7 @@
         "name": "Delete last downloaded file",
         "description": "With confirmation",
         "icon": null,
-        "script": "file=$(/bin/ls -t -d ~/Téléchargements/télé/* | head -1); zenity --question --text \"Delete $file ?\n\n(enter = YES)\" --width=450 --ok-label='_Yes' --cancel-label='_No' && rm -f \"$file\""
+        "script": "file=$(/bin/ls -t -d ~/Téléchargements/* | head -1); zenity --question --text \"Delete $file ?\n\n(enter = YES)\" --width=450 --ok-label='_Yes' --cancel-label='_No' && rm -f \"$file\""
     },
     {
         "name": "Copy last downloaded file path as text",
