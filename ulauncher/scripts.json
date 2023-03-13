@@ -65,5 +65,10 @@
         "name": "Copy last downloaded file path",
         "icon": null,
         "script": "/bin/ls -t -d ~/Téléchargements/* | head -1 | xclip -selection clipboard"
+    },
+    {
+        "name": "clipboard -> basename -> clipboard",
+        "icon": null,
+        "script": "basename \"$(xclip -selection c -o)\" | tr -d '\n' | xclip -selection clipboard"
     }
 ]
