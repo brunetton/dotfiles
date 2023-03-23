@@ -81,5 +81,10 @@
         "name": "clipboard -> basename -> clipboard",
         "icon": null,
         "script": "basename \"$(xclip -selection c -o)\" | xclip -r -selection clipboard"
+    },
+    {
+        "name": "Play in VLC",
+        "icon": null,
+        "script": "vlc \"$(xclip -selection c -o)\""
     }
 ]
