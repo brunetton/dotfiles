@@ -215,6 +215,7 @@ for_window [class="(p|P)avucontrol"] floating enable
 for_window [title="Magnus"] floating enable
 for_window [title="feh"] floating enable
 for_window [title="CustomScript"] floating enable
+for_window [title="SimpleScreenRecorder"] floating enable
 
 # Floating disabled
 for_window [class="Xfdesktop" title="Bureau"] floating disable
