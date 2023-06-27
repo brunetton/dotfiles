@@ -1,4 +1,4 @@
 #!/bin/sh
 a2jmidid -e &
 # sleep 2
-jack-matchmaker -p ~/dev/dotfiles/music/jackmatchmaker.conf &
+/home/bruno/dev/dotfiles/music/reload-jackmatchmaker.sh

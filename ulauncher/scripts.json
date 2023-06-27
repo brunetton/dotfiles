@@ -32,9 +32,14 @@
         "script": "fusermount -u ~/Android; go-mtpfs ~/Android"
     },
     {
-        "name": "Mount Google drive (~/drive)",
+        "name": "Mount Google drive (~/Google drive)",
         "icon": null,
         "script": "fusermount -u '/home/bruno/Google drive'; sleep 1; google-drive-ocamlfuse '/home/bruno/Google drive/' &"
+    },
+    {
+        "name": "Unmount Google drive kill (~/Google drive)",
+        "icon": null,
+        "script": "fusermount -u '/home/bruno/Google drive'; killall google-drive-ocamlfuse -9"
     },
     {
         "name": "Stop transferts sshfs foireux",
@@ -86,5 +91,10 @@
         "name": "Play in VLC",
         "icon": null,
         "script": "vlc \"$(xclip -selection c -o)\""
+    },
+    {
+        "name": "test",
+        "icon": null,
+        "script": "echo $(ssh-agent) | xclip -r -selection clipboard"
     }
 ]
