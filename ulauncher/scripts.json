@@ -101,6 +101,6 @@
         "name": "Commit Reaper conf updates",
         "description": "Backup des fichiers de conf (clavier, reaper.ini) -> dotfiles Git repo (Commit + push)",
         "icon": null,
-        "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/dev/dotfiles/reaper; cp ~/.config/REAPER/reaper.ini .; git add -u --ignore-removal .; git ci --untracked-files=no -m 'update'; git push; echo '\nEND'\" "
+        "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/dev/dotfiles/reaper; cp ~/.config/REAPER/reaper.ini .; git add -u --ignore-removal .; git ci --untracked-files=no -m 'update Reaper conf'; git push; echo '\nEND'\" "
     }
 ]
