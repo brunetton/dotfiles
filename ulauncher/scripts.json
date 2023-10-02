@@ -98,8 +98,9 @@
         "script": "vlc \"$(xclip -selection c -o)\""
     },
     {
-        "name": "test",
+        "name": "Commit Reaper conf updates",
+        "description": "Backup des fichiers de conf (clavier, reaper.ini) -> dotfiles Git repo (Commit + push)",
         "icon": null,
-        "script": "echo $(ssh-agent) | xclip -r -selection clipboard"
+        "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/dev/dotfiles/reaper; cp ~/.config/REAPER/reaper.ini .; git add -u --ignore-removal .; git ci --untracked-files=no -m 'update'; git push; echo '\nEND'\" "
     }
 ]
