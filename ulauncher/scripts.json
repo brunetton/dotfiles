@@ -29,7 +29,12 @@
     {
         "name": "Mount tel -> ~/Android",
         "icon": null,
-        "script": "fusermount -u ~/Android; go-mtpfs ~/Android"
+        "script": "aft-mtp-mount /home/bruno/Android"
+    },
+    {
+        "name": "Umount tel (~/Android)",
+        "icon": null,
+        "script": "fusermount -u '/home/bruno/Android'"
     },
     {
         "name": "Mount Google drive (~/Google drive)",
