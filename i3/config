@@ -161,6 +161,8 @@ workspace_layout tabbed
 
 ## i3-workspacesgrid config
 # Direct acces to desktops
+exec --no-startup-id /home/bruno/.pyenv/versions/perso/bin/python ~/dev/i3-workspacesgrid/i3-grid.py start-server
+
 bindsym $mod+ampersand exec curl http://localhost:7088/jump/1
 bindsym $mod+eacute exec curl http://localhost:7088/jump/2
 bindsym $mod+quotedbl exec curl http://localhost:7088/jump/3
@@ -192,9 +194,6 @@ bindsym $mod+Ctrl+Shift+Up exec curl http://localhost:7088/send/up
 bindsym $mod+Ctrl+Shift+Down exec curl http://localhost:7088/send/down
 bindsym $mod+Ctrl+Shift+Left exec curl http://localhost:7088/send/left
 bindsym $mod+Ctrl+Shift+Right exec curl http://localhost:7088/send/right
-
-
-exec --no-startup-id "~/dev/i3-workspacesgrid/i3-grid.py start-server"
 
 
 for_window [title="MediaInfo"] floating enable
