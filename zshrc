@@ -344,3 +344,8 @@ setopt clobber
 
 # https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+# Custom shortcuts
+# ("cat" to see shortcut code)
+## "alt+up" -> last command without args (https://unix.stackexchange.com/a/429876/81254)
+bindkey -s "^[[1;3A" '\e0\e_'
