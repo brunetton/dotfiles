@@ -93,6 +93,11 @@
         "script": "basename \"$(xclip -selection c -o)\" | xclip -r -selection clipboard"
     },
     {
+        "name": "clipboard -> dirname -> clipboard",
+        "icon": null,
+        "script": "dirname \"$(xclip -selection c -o)\" | xclip -r -selection clipboard"
+    },
+    {
         "name": "Play in VLC",
         "icon": null,
         "script": "vlc \"$(xclip -selection c -o)\""
