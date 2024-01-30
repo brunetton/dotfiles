@@ -161,7 +161,7 @@ workspace_layout tabbed
 
 ## i3-workspacesgrid config
 # Direct acces to desktops
-exec --no-startup-id /home/bruno/.pyenv/versions/perso/bin/python ~/dev/i3-workspacesgrid/i3-grid.py start-server
+exec --no-startup-id env python3 ~/dev/i3-workspacesgrid/i3-grid.py start-server
 
 bindsym $mod+ampersand exec curl http://localhost:7088/jump/1
 bindsym $mod+eacute exec curl http://localhost:7088/jump/2
@@ -227,7 +227,8 @@ assign [class="Zim"] → $souk
 assign [class="Pidgin"] → $souk
 
 
-exec --no-startup-id parcellite
+# exec --no-startup-id parcellite
+exec --no-startup-id diodon
 exec --no-startup-id zim
 exec --no-startup-id setxkbmap -option caps:none
 exec --no-startup-id nm-applet
