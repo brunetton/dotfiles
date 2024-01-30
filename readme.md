@@ -9,14 +9,15 @@
   * ssh/config -> ~/.ssh/config
   * python/ipython_config.py -> ~/.ipython/profile_default/ipython_config.py
   * tmux/tmux.conf -> ~/.tmux.conf
-  * lftprc => ~/.lftprc
-  * zshrc => ~/.zshrc
-  * sxhkdrc => ~/.config/sxhkd/sxhkdrc
-  * nanorc => ~/.nanorc
-  * redshift.conf => ~/.config/redshift.conf
+  * lftprc -> ~/.lftprc
+  * zshrc -> ~/.zshrc
+  * zsh_plugins.txt -> ~/.zsh_plugins.txt
+  * sxhkdrc -> ~/.config/sxhkd/sxhkdrc
+  * nanorc -> ~/.nanorc
+  * redshift.conf -> ~/.config/redshift.conf
   * ln -s ~/dev/dotfiles/systemd/restart_xbanish_after_suspend.service /etc/systemd/system/restart_xbanish.service
-  * reaper-kb.ini => ~/.config/REAPER/
-  * ulauncher/scripts.json => ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
+  * reaper-kb.ini -> ~/.config/REAPER/
+  * ulauncher/scripts.json -> ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
 
 ## See also
 
