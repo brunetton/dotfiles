@@ -300,8 +300,9 @@ unsetopt share_history
 # The next line updates PATH for Netlify's Git Credential Helper.
 # if [ -f '/home/bruno/.netlify/helper/path.zsh.inc' ]; then source '/home/bruno/.netlify/helper/path.zsh.inc'; fi
 
+# Prompt custom https://github.com/romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.zsh/p10k.zsh
+source ~/.zsh/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
