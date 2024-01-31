@@ -11,14 +11,14 @@
   * tmux/tmux.conf -> ~/.tmux.conf
   * lftprc -> ~/.lftprc
   * zsh/zshrc -> ~/.zshrc
-  * zsh/ -> ~/.zsh/
+  * zsh/zsh_plugins.txt -> ~/.zsh/.zsh_plugins.txt
   * sxhkdrc -> ~/.config/sxhkd/sxhkdrc
   * nanorc -> ~/.nanorc
   * redshift.conf -> ~/.config/redshift.conf
   * ln -s ~/dev/dotfiles/systemd/restart_xbanish_after_suspend.service /etc/systemd/system/restart_xbanish.service
   * reaper-kb.ini -> ~/.config/REAPER/
   * ulauncher/scripts.json -> ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
-  * xfce4-keyboard-shortcuts.xml -> ~/.config/xfce4/xfconf/xfce-perchannel-xml
+  * ~~xfce4-keyboard-shortcuts.xml~~ non impossible, il réécrit le fichier
 
 ## See also
 
