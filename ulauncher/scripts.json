@@ -109,6 +109,11 @@
         "script": "xterm -hold -e \". ~/.ssh/agent.env > /dev/null; cd ~/dev/dotfiles/reaper; cp ~/.config/REAPER/reaper.ini .; git add -u --ignore-removal .; git ci --untracked-files=no -m 'update Reaper conf'; git push; echo '\nEND'\" "
     },
     {
+        "name": "Link to ~/Public (from clipboard)",
+        "description": "Crée un lien du fichier copié dans ~/Public",
+        "script": "filename=$(xclip -selection c -o | sed -r 's/(file:\\/\\/)?(.*)/\\2/'); ln -s \"$filename\" ~/Public"
+    },
+    {
         "name": "Edit notes",
         "script": "code ~/Notes"
     },
