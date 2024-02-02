@@ -16,7 +16,7 @@
   * nanorc -> ~/.nanorc
   * redshift.conf -> ~/.config/redshift.conf
   * ln -s ~/dev/dotfiles/systemd/restart_xbanish_after_suspend.service /etc/systemd/system/restart_xbanish.service
-  * reaper-kb.ini -> ~/.config/REAPER/
+  * reaper/ -> ~/.config/REAPER/
   * ulauncher/scripts.json -> ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
   * ~~xfce4-keyboard-shortcuts.xml~~ non impossible, il réécrit le fichier
 

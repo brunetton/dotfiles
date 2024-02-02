@@ -1,3 +1,8 @@
 scripts/.env
 ssh/config
 vscode
+reaper/Scripts
+reaper/Effects
+reaper/Data
+reaper/Cusrors
+reaper/reaper-install-rev.txt
