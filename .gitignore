@@ -6,3 +6,5 @@ reaper/Effects
 reaper/Data
 reaper/Cusrors
 reaper/reaper-install-rev.txt
+reaper/ReaPack/cache
+reaper/UserPlugins/reaper_reapack-x86_64.so
