@@ -14,11 +14,11 @@
   * zsh/zsh_plugins.txt -> ~/.zsh/.zsh_plugins.txt
   * sxhkdrc -> ~/.config/sxhkd/sxhkdrc
   * nanorc -> ~/.nanorc
-  * redshift.conf -> ~/.config/redshift.conf
-  * ln -s ~/dev/dotfiles/systemd/restart_xbanish_after_suspend.service /etc/systemd/system/restart_xbanish.service
+  * redshift.conf -> ~/.config/redshift.conf **Must be a HARDLINK** (https://github.com/jonls/redshift/issues/672#issuecomment-431026802)
   * reaper/ -> ~/.config/REAPER/
   * ulauncher/scripts.json -> ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
   * ~~xfce4-keyboard-shortcuts.xml~~ non impossible, il réécrit le fichier
+  * sudo ln -s ~bruno/dev/dotfiles/systemd/before_and_after_suspend-perso.sh /usr/lib/systemd/system-sleep/
 
 ## See also
 
