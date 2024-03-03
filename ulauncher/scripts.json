@@ -24,7 +24,12 @@
     {
         "name": "Mount naq (sshfs)",
         "icon": null,
-        "script": "cd sshfs; ./mount_naq.sh"
+        "script": "~/sshfs/mount_naq.sh"
+    },
+    {
+        "name": "Umount naq (sshfs)",
+        "icon": null,
+        "script": "umount ~/sshfs/naq"
     },
     {
         "name": "Mount tel -> ~/Android",
@@ -116,6 +121,10 @@
     {
         "name": "Edit notes",
         "script": "code ~/Notes"
+    },
+    {
+        "name": "Restart UGEE driver",
+        "script": "systemctl --user restart opentabletdriver.service --now"
     },
     }
 ]
