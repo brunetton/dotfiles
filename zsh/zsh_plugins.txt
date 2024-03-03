@@ -1,5 +1,5 @@
-romkatv/powerlevel10k
 Tarrasch/zsh-autoenv
 ohmyzsh/ohmyzsh path:plugins/copypath
 ohmyzsh/ohmyzsh path:plugins/rake-fast
 ohmyzsh/ohmyzsh path:plugins/dirhistory
+zsh-users/zsh-history-substring-search
