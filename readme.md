@@ -19,6 +19,7 @@
   * ulauncher/scripts.json -> ~/.config/ulauncher/scripts.json (https://github.com/NastuzziSamy/ulauncher-custom-scripts)
   * ~~xfce4-keyboard-shortcuts.xml~~ non impossible, il réécrit le fichier
   * sudo ln -s ~bruno/dev/dotfiles/systemd/before_and_after_suspend-perso.sh /usr/lib/systemd/system-sleep/
+  * QDirStat/ -> ~/.config/QDirStat/
 
 ## See also
 
