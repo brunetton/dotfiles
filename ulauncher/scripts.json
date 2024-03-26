@@ -47,7 +47,7 @@
         "script": "fusermount -u '/home/bruno/Google drive'; sleep 1; google-drive-ocamlfuse '/home/bruno/Google drive/' &"
     },
     {
-        "name": "Unmount Google drive kill (~/Google drive)",
+        "name": "Umount Google drive kill (~/Google drive)",
         "icon": null,
         "script": "fusermount -u '/home/bruno/Google drive'; killall google-drive-ocamlfuse -9"
     },
@@ -126,5 +126,10 @@
         "name": "Restart UGEE driver",
         "script": "systemctl --user restart opentabletdriver.service --now"
     },
+    {
+        "name": "Unzip last download",
+        "description": "WIP !!!!!!!!!!!!!!!!!!!!!!!!!!!",
+        "icon": null,
+        "script": "file=$(/bin/ls -t -d '/home/bruno/tmp/test - unzip/*' | head -1); && unzip -d \"${file%.*}\" \"$file\""
     }
 ]
